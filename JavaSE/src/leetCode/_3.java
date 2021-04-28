@@ -40,6 +40,7 @@ public class _3 {
 
 
 /*
+    错的
     public static int lengthOfLongestSubstring(String s) {
 
         int len = s.length();
