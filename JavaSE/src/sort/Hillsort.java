@@ -67,11 +67,11 @@ public class Hillsort {
 
     //令间隔为数组长度的一半,使其时候所以数组，但是效率仍不是最高的
     private static void sort(int[] arr) {
-        for (int gap = arr.length/2; gap > 0; gap /= 2) {
+        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < arr.length; i++) {
-                for (int j = i; j > gap - 1; j -= gap) {
+                for (int j = i; j > gap - 1; j = j - gap) {
                     if (arr[j] < arr[j - gap]) {
-                        swap(arr, j, j-gap);
+                        swap(arr, j, j - gap);
                     }
                 }
             }

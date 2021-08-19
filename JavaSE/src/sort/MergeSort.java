@@ -2,7 +2,7 @@ package sort;
 
 /**
  * 归并排序
- *
+ * <p>
  * 先完成数组的归并操作，在进行递归操作，分布操作
  */
 public class MergeSort {
@@ -12,7 +12,7 @@ public class MergeSort {
 
         //int[] arr = {9, 6, 11, 3, 5, 12, 8, 7, 10, 15, 14, 4, 1, 13, 2};
         int[] arr = {1, 4, 7, 8, 3, 6, 9};
-        sort(arr,0, arr.length-1);
+        sort(arr, 0, arr.length - 1);
         print(arr);
     }
 
@@ -51,7 +51,7 @@ public class MergeSort {
 
         //将归并后的数组temp数组的值覆盖原数组arr中值
         for (int l = 0; l < temp.length; l++) {
-            arr[leftPtr+l] = temp[l];
+            arr[leftPtr + l] = temp[l];
         }
     }
 
